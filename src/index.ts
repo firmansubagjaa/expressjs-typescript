@@ -1,8 +1,8 @@
 import express, { type Request, type Application, type Response } from 'express'
-import dotenv from 'dotenv'
+import 'dotenv/config'
 
 const app: Application = express()
-const port: number = process.env.PORT ? Number(process.env.PORT) : 3000
+const port: number = 3000
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!')
